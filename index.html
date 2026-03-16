@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NatureCraft - Handmade Organic Products</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fafaf7;
+color:#333;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:white;
+position:sticky;
+top:0;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#2e7d32;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#444;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+
+background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#2e7d32;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+/* SECTION */
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:34px;
+margin-bottom:50px;
+color:#2e7d32;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.product{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.product:hover{
+transform:translateY(-10px);
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.product h3{
+padding:15px;
+}
+
+.product p{
+padding:0 15px 20px;
+font-size:14px;
+}
+
+/* STORY */
+
+.story{
+display:flex;
+align-items:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.story img{
+width:420px;
+border-radius:10px;
+}
+
+.story p{
+line-height:1.7;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 22px;
+border-radius:40px;
+font-size:14px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+
+footer{
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.story{
+flex-direction:column;
+}
+
+.story img{
+width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">NatureCraft</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#story">Our Story</a>
+<a href="#gallery">Gallery</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+<h1>Handmade. Organic. Made With Love.</h1>
+<p>A small startup bringing fresh organic fruit juices and handmade bouquets to brighten your day.</p>
+
+<a class="btn" href="#products">Explore Products</a>
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+<h2 class="section-title">Our Handmade Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888">
+<h3>Organic Fruit Juice</h3>
+<p>Fresh handmade juices made from organic fruits with no chemicals.</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+<h3>Handmade Bouquets</h3>
+<p>Beautiful handmade bouquets crafted for special moments.</p>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc">
+<h3>Seasonal Juice Mix</h3>
+<p>Refreshing mix of seasonal fruits full of natural vitamins.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STORY -->
+
+<section id="story">
+
+<h2 class="section-title">Our Startup Story</h2>
+
+<div class="story">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+
+<p>
+
+NatureCraft started as a small dream to create natural products that bring happiness and health to people.
+
+Instead of mass-produced items, we focus on **handmade quality**. Our fruit juices are prepared fresh using organic fruits, and our bouquets are designed by hand with creativity and care.
+
+Every product you receive is made with passion, because we believe small businesses can create meaningful experiences.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">Product Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc">
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+<img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+<img src="https://images.unsplash.com/photo-1478147427282-58a87a120781">
+<img src="https://images.unsplash.com/photo-1478144592103-25e218a04891">
+
+</div>
+
+</section>
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp" href="https://wa.me/917047343399" target="_blank">
+Order on WhatsApp
+</a>
+
+<footer>
+
+<p>© 2026 NatureCraft | Handmade Organic Startup</p>
+
+</footer>
+
+</body>
+</html>
